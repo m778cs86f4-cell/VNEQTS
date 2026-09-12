@@ -1,16 +1,30 @@
-# VNEQTS: Edge Server Placement Algorithms
+# VNEQTS
 
 This repository provides the source code and preprocessed experimental inputs
-used for evaluating **VNEQTS** and several baseline algorithms for the
-**Edge Server Placement Problem (ESPP)** in Mobile Edge Computing (MEC).
+associated with the paper:
+
+> **"A von Neumann Entropy-Driven Quantum Tabu Search for Edge Server Placement in 5G Networks"**
+
+The paper proposes **VNEQTS**, an optimization algorithm designed for the
+**Edge Server Placement Problem (ESPP)** in 5G Mobile Edge Computing (MEC)
+networks.
+
+In addition to the proposed VNEQTS algorithm, this repository also provides
+the implementations of several baseline algorithms used for experimental
+comparison.
 
 The repository currently contains implementations of the following algorithms:
 
-- **VNEQTS** – the proposed optimization algorithm
-- **ACO** – Ant Colony Optimization
-- **DRLO** – DRLO baseline
-- **QTS** – Quantum-inspired Tabu Search
-- **nPGSAO** – nPGSAO baseline
+- **VNEQTS** – the proposed algorithm, implemented in **C++**.
+- **ACO** – Ant Colony Optimization, implemented in **MATLAB**.
+- **DRLO** – DRLO baseline, implemented in **Python**.
+- **QTS** – Quantum-inspired Tabu Search, implemented in **Python**.
+- **nPGSAO** – implemented in **Python**. This directory contains the
+  implementations of **Random**, **SGA**, **PSO**, and **nPGSAO**.
+
+For the baseline algorithms, the programming languages and implementation
+structures follow, as closely as possible, the implementation approaches
+described or adopted in their corresponding original papers.
 
 Each algorithm is organized in an independent directory and contains its own
 source code, preprocessed input data, and detailed README file.
@@ -23,30 +37,31 @@ The repository is organized as follows:
 
 ```text
 VNEQTS/
-├── ACO/
-│   ├── data/
-│   ├── src/
-│   └── README.md
-│
-├── DRLO/
-│   ├── data/
-│   ├── src/
-│   └── README.md
-│
-├── QTS/
-│   ├── data/
-│   ├── src/
-│   └── README.md
-│
 ├── VNEQTS/
 │   ├── data/
 │   ├── src/
 │   └── README.md
 │
-├── nPGSAO/
-│   ├── data/
-│   ├── src/
-│   └── README.md
+├── Baseline/
+│   ├── ACO/
+│   │   ├── data/
+│   │   ├── src/
+│   │   └── README.md
+│   │
+│   ├── DRLO/
+│   │   ├── data/
+│   │   ├── src/
+│   │   └── README.md
+│   │
+│   ├── QTS/
+│   │   ├── data/
+│   │   ├── src/
+│   │   └── README.md
+│   │
+│   └── nPGSAO/
+│       ├── data/
+│       ├── src/
+│       └── README.md
 │
 └── README.md
 ```
@@ -180,7 +195,7 @@ Problem.
 
 Source page:
 
-https://wangshangguang.github.io/telecom_dataset/
+https://www.kaggle.com/datasets/mexwell/telecom-shanghai-dataset
 
 The original dataset is provided for educational and non-commercial research
 purposes. Users should follow the usage, citation, and redistribution
