@@ -1,0 +1,29 @@
+{
+    "es_ratio": 0.0284,
+    "data_path": "bs_statistics_all_12files.csv",
+    "bs_num": 0,
+    "acu_budget": 71,
+    "n_max": 3,
+    "d_max_m": 4800.0,
+    "service_capacity": null,
+    "episode": 500,
+    "max_step": 30,
+    "capacity_constrained_mapping": false,
+    "site_idle_energy": 0.0,
+    "acu_static_energy": 1.0,
+    "acu_dynamic_energy": 1.0,
+    "dynamic_energy_exponent": 1.0,
+    "energy_efficiency_bounds": "vneqts",
+    "load_balance_positive_only": true,
+    "weights": [0.25, 0.25, 0.25, 0.25],
+    "weight_profiles": [
+        {
+            "name": "ProfileA_equal",
+            "weights": [0.25, 0.25, 0.25, 0.25]
+        }
+    ],
+    "run_weight_profiles": ["ProfileA_equal"],
+    "tanh_y": 20,
+    "tanh_x": 0.002
+
+}
